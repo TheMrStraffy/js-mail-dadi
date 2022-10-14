@@ -4,13 +4,13 @@ const winner = document.createElement('p');
 let giocatore = document.querySelector('[name="giocatore"]');
 let computer = document.querySelector('[name="computer"]');
 const button = document.querySelector('button');
-let numGenerator1 = Math.ceil(Math.random() * 6);
-let numGenerator2 = Math.ceil(Math.random() * 6);
 
 button.addEventListener('click', function(){
   
-  giocatore.value;
-  computer.value;
+  giocatore.value = '';
+  computer.value = '';
+  let numGenerator1 = Math.ceil(Math.random() * 6);
+  let numGenerator2 = Math.ceil(Math.random() * 6);
   giocatore.value = numGenerator1;
   computer.value = numGenerator2;
   // Stabilire il vincitore, in base a chi fa il punteggio più alto.
